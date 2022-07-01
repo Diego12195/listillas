@@ -4,4 +4,7 @@
     <string name="button_cancel">CANCEL</string>
     <string name="title_label">TITEL</string>
     <string name="description_label">DESCRIPTION</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="delete_button">Delete</string>
+    <string name="save_button">Save</string>
 </resources>
