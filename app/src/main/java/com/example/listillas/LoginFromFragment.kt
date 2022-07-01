@@ -1,5 +1,6 @@
 package com.example.listillas
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -26,6 +27,10 @@ class LoginFromFragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+
+
+
+
         }
     }
 
@@ -33,8 +38,23 @@ class LoginFromFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val view = inflater.inflate(R.layout.fragment_login_from, container, false)
+        val button = view.findViewById<View>(R.id.next_button)
+
+        button.setOnClickListener{
+                val intent = Intent (activity,Lista::class.java)
+                activity?.startActivity(intent)
+        }
+        return view
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_login_from, container, false)
+
+    }
+
+    override fun onPause() {
+        super.onPause()
     }
 
     companion object {
@@ -55,5 +75,7 @@ class LoginFromFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+
+
     }
 }
