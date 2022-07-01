@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Listillas</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="button_next">NEXT</string>
     <string name="button_cancel">CANCEL</string>
+    <string name="title_label">TITEL</string>
+    <string name="description_label">DESCRIPTION</string>
 </resources>
