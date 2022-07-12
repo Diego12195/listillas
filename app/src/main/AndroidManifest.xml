@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.listillas">
+    package="com.Diego.listillas">
 
     <application
         android:allowBackup="true"
@@ -10,10 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Listillas">
         <activity
-            android:name=".Lista"
+            android:name=".json.JsonActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".config.ConfigActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.Diego.listillas.list.Lista"
+            android:exported="false" />
+        <activity
+            android:name="com.Diego.listillas.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
